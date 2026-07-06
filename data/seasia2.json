@@ -1,0 +1,30 @@
+{
+  "quizName": "东南亚/日韩 II 级 (冷门城市)",
+  "cities": [
+    {"id":1,"name":"Aomori","chineseName":"青森","localName":"Aomori","country":"日本","lat":40.8244,"lng":140.7406},
+    {"id":2,"name":"Akita","chineseName":"秋田","localName":"Akita","country":"日本","lat":39.7186,"lng":140.1024},
+    {"id":3,"name":"Morioka","chineseName":"盛冈","localName":"Morioka","country":"日本","lat":39.7015,"lng":141.1524},
+    {"id":4,"name":"Fukushima","chineseName":"福岛","localName":"Fukushima","country":"日本","lat":37.7503,"lng":140.4676},
+    {"id":5,"name":"Mito","chineseName":"水户","localName":"Mito","country":"日本","lat":36.3416,"lng":140.4468},
+    {"id":6,"name":"Niigata","chineseName":"新潟","localName":"Niigata","country":"日本","lat":37.9162,"lng":139.0364},
+    {"id":7,"name":"Nagano","chineseName":"长野","localName":"Nagano","country":"日本","lat":36.6513,"lng":138.1810},
+    {"id":8,"name":"Toyama","chineseName":"富山","localName":"Toyama","country":"日本","lat":36.6953,"lng":137.2114},
+    {"id":9,"name":"Kanazawa","chineseName":"金泽","localName":"Kanazawa","country":"日本","lat":36.5613,"lng":136.6562},
+    {"id":10,"name":"Fukui","chineseName":"福井","localName":"Fukui","country":"日本","lat":36.0652,"lng":136.2220},
+    {"id":11,"name":"Nara","chineseName":"奈良","localName":"Nara","country":"日本","lat":34.6851,"lng":135.8048},
+    {"id":12,"name":"Wakayama","chineseName":"和歌山","localName":"Wakayama","country":"日本","lat":34.2260,"lng":135.1675},
+    {"id":13,"name":"Tokushima","chineseName":"德岛","localName":"Tokushima","country":"日本","lat":34.0703,"lng":134.5545},
+    {"id":14,"name":"Takamatsu","chineseName":"高松","localName":"Takamatsu","country":"日本","lat":34.3401,"lng":134.0434},
+    {"id":15,"name":"Gwangju","chineseName":"光州","localName":"Gwangju","country":"韩国","lat":35.1595,"lng":126.8526},
+    {"id":16,"name":"Daegu","chineseName":"大邱","localName":"Daegu","country":"韩国","lat":35.8714,"lng":128.6014},
+    {"id":17,"name":"Jeju City","chineseName":"济州","localName":"Jeju","country":"韩国","lat":33.4996,"lng":126.5312},
+    {"id":18,"name":"Jeonju","chineseName":"全州","localName":"Jeonju","country":"韩国","lat":35.8242,"lng":127.1480},
+    {"id":19,"name":"Gyeongju","chineseName":"庆州","localName":"Gyeongju","country":"韩国","lat":35.8562,"lng":129.2247},
+    {"id":20,"name":"Luang Prabang","chineseName":"琅勃拉邦","localName":"Luang Prabang","country":"老挝","lat":19.8833,"lng":102.1333},
+    {"id":21,"name":"Sukhothai","chineseName":"素可泰","localName":"Sukhothai","country":"泰国","lat":17.0081,"lng":99.8217},
+    {"id":22,"name":"Malacca","chineseName":"马六甲","localName":"Melaka","country":"马来西亚","lat":2.1896,"lng":102.2501},
+    {"id":23,"name":"Penang","chineseName":"槟城","localName":"George Town","country":"马来西亚","lat":5.4141,"lng":100.3288},
+    {"id":24,"name":"Ipoh","chineseName":"怡保","localName":"Ipoh","country":"马来西亚","lat":4.5975,"lng":101.0901},
+    {"id":25,"name":"Makassar","chineseName":"望加锡","localName":"Makassar","country":"印尼","lat":-5.1477,"lng":119.4327}
+  ]
+}

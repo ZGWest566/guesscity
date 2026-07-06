@@ -1,0 +1,30 @@
+{
+  "quizName": "美国 II 级",
+  "cities": [
+    {"id":1,"name":"Tulsa","chineseName":"塔尔萨","localName":"Tulsa","country":"美国","lat":36.1540,"lng":-95.9928},
+    {"id":2,"name":"Oklahoma City","chineseName":"俄克拉荷马城","localName":"Oklahoma City","country":"美国","lat":35.4676,"lng":-97.5164},
+    {"id":3,"name":"Omaha","chineseName":"奥马哈","localName":"Omaha","country":"美国","lat":41.2565,"lng":-95.9345},
+    {"id":4,"name":"Albuquerque","chineseName":"阿尔伯克基","localName":"Albuquerque","country":"美国","lat":35.0853,"lng":-106.6056},
+    {"id":5,"name":"Tucson","chineseName":"图森","localName":"Tucson","country":"美国","lat":32.2226,"lng":-110.9747},
+    {"id":6,"name":"Reno","chineseName":"里诺","localName":"Reno","country":"美国","lat":39.5296,"lng":-119.8138},
+    {"id":7,"name":"Boise","chineseName":"博伊西","localName":"Boise","country":"美国","lat":43.6150,"lng":-116.2023},
+    {"id":8,"name":"Salt Lake City","chineseName":"盐湖城","localName":"Salt Lake City","country":"美国","lat":40.7608,"lng":-111.8910},
+    {"id":9,"name":"Colorado Springs","chineseName":"科罗拉多斯普林斯","localName":"Colorado Springs","country":"美国","lat":38.8339,"lng":-104.8214},
+    {"id":10,"name":"Des Moines","chineseName":"得梅因","localName":"Des Moines","country":"美国","lat":41.6005,"lng":-93.6091},
+    {"id":11,"name":"Madison","chineseName":"麦迪逊","localName":"Madison","country":"美国","lat":43.0731,"lng":-89.4012},
+    {"id":12,"name":"Rochester","chineseName":"罗切斯特","localName":"Rochester","country":"美国","lat":43.1566,"lng":-77.6088},
+    {"id":13,"name":"Buffalo","chineseName":"水牛城","localName":"Buffalo","country":"美国","lat":42.8864,"lng":-78.8784},
+    {"id":14,"name":"Pittsburgh","chineseName":"匹兹堡","localName":"Pittsburgh","country":"美国","lat":40.4406,"lng":-79.9959},
+    {"id":15,"name":"Cincinnati","chineseName":"辛辛那提","localName":"Cincinnati","country":"美国","lat":39.1031,"lng":-84.5120},
+    {"id":16,"name":"Nashville","chineseName":"纳什维尔","localName":"Nashville","country":"美国","lat":36.1627,"lng":-86.7816},
+    {"id":17,"name":"New Orleans","chineseName":"新奥尔良","localName":"New Orleans","country":"美国","lat":29.9511,"lng":-90.0715},
+    {"id":18,"name":"St. Louis","chineseName":"圣路易斯","localName":"St. Louis","country":"美国","lat":38.6270,"lng":-90.1994},
+    {"id":19,"name":"Kansas City","chineseName":"堪萨斯城","localName":"Kansas City","country":"美国","lat":39.0997,"lng":-94.5786},
+    {"id":20,"name":"Cleveland","chineseName":"克利夫兰","localName":"Cleveland","country":"美国","lat":41.4993,"lng":-81.6944},
+    {"id":21,"name":"Milwaukee","chineseName":"密尔沃基","localName":"Milwaukee","country":"美国","lat":43.0389,"lng":-87.9065},
+    {"id":22,"name":"Providence","chineseName":"普罗维登斯","localName":"Providence","country":"美国","lat":41.8240,"lng":-71.4128},
+    {"id":23,"name":"Hartford","chineseName":"哈特福德","localName":"Hartford","country":"美国","lat":41.7637,"lng":-72.6851},
+    {"id":24,"name":"Birmingham","chineseName":"伯明翰","localName":"Birmingham","country":"美国","lat":33.5186,"lng":-86.8104},
+    {"id":25,"name":"Montgomery","chineseName":"蒙哥马利","localName":"Montgomery","country":"美国","lat":32.3792,"lng":-86.3077}
+  ]
+}

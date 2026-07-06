@@ -1,0 +1,30 @@
+{
+  "quizName": "欧洲 II 级",
+  "cities": [
+    {"id":1,"name":"Munich","chineseName":"慕尼黑","localName":"München","country":"德国","lat":48.1351,"lng":11.5820},
+    {"id":2,"name":"Hamburg","chineseName":"汉堡","localName":"Hamburg","country":"德国","lat":53.5511,"lng":9.9937},
+    {"id":3,"name":"Frankfurt","chineseName":"法兰克福","localName":"Frankfurt","country":"德国","lat":50.1109,"lng":8.6821},
+    {"id":4,"name":"Cologne","chineseName":"科隆","localName":"Köln","country":"德国","lat":50.9375,"lng":6.9603},
+    {"id":5,"name":"Manchester","chineseName":"曼彻斯特","localName":"Manchester","country":"英国","lat":53.4808,"lng":-2.2426},
+    {"id":6,"name":"Birmingham","chineseName":"伯明翰","localName":"Birmingham","country":"英国","lat":52.4862,"lng":-1.8904},
+    {"id":7,"name":"Edinburgh","chineseName":"爱丁堡","localName":"Edinburgh","country":"英国","lat":55.9533,"lng":-3.1883},
+    {"id":8,"name":"Lyon","chineseName":"里昂","localName":"Lyon","country":"法国","lat":45.7640,"lng":4.8357},
+    {"id":9,"name":"Marseille","chineseName":"马赛","localName":"Marseille","country":"法国","lat":43.2965,"lng":5.3698},
+    {"id":10,"name":"Barcelona","chineseName":"巴塞罗那","localName":"Barcelona","country":"西班牙","lat":41.3851,"lng":2.1734},
+    {"id":11,"name":"Valencia","chineseName":"瓦伦西亚","localName":"València","country":"西班牙","lat":39.4699,"lng":-0.3763},
+    {"id":12,"name":"Milan","chineseName":"米兰","localName":"Milano","country":"意大利","lat":45.4642,"lng":9.1900},
+    {"id":13,"name":"Turin","chineseName":"都灵","localName":"Torino","country":"意大利","lat":45.0703,"lng":7.6869},
+    {"id":14,"name":"Naples","chineseName":"那不勒斯","localName":"Napoli","country":"意大利","lat":40.8518,"lng":14.2681},
+    {"id":15,"name":"Florence","chineseName":"佛罗伦萨","localName":"Firenze","country":"意大利","lat":43.7696,"lng":11.2558},
+    {"id":16,"name":"Venice","chineseName":"威尼斯","localName":"Venezia","country":"意大利","lat":45.4408,"lng":12.3155},
+    {"id":17,"name":"Gothenburg","chineseName":"哥德堡","localName":"Göteborg","country":"瑞典","lat":57.7089,"lng":11.9746},
+    {"id":18,"name":"Bergen","chineseName":"卑尔根","localName":"Bergen","country":"挪威","lat":60.3913,"lng":5.3221},
+    {"id":19,"name":"Krakow","chineseName":"克拉科夫","localName":"Kraków","country":"波兰","lat":50.0647,"lng":19.9450},
+    {"id":20,"name":"Wroclaw","chineseName":"弗罗茨瓦夫","localName":"Wrocław","country":"波兰","lat":51.1079,"lng":17.0385},
+    {"id":21,"name":"Gdansk","chineseName":"格但斯克","localName":"Gdańsk","country":"波兰","lat":54.3520,"lng":18.6466},
+    {"id":22,"name":"Brno","chineseName":"布尔诺","localName":"Brno","country":"捷克","lat":49.1951,"lng":16.6068},
+    {"id":23,"name":"Sarajevo","chineseName":"萨拉热窝","localName":"Sarajevo","country":"波黑","lat":43.8563,"lng":18.4131},
+    {"id":24,"name":"Dubrovnik","chineseName":"杜布罗夫尼克","localName":"Dubrovnik","country":"克罗地亚","lat":42.6507,"lng":18.0944},
+    {"id":25,"name":"Tirana","chineseName":"蒂拉纳","localName":"Tiranë","country":"阿尔巴尼亚","lat":41.3275,"lng":19.8187}
+  ]
+}

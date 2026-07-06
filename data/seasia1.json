@@ -1,0 +1,30 @@
+{
+  "quizName": "东南亚/日韩 I 级",
+  "cities": [
+    {"id":1,"name":"Tokyo","chineseName":"东京","localName":"Tōkyō","country":"日本","lat":35.6762,"lng":139.6503},
+    {"id":2,"name":"Osaka","chineseName":"大阪","localName":"Ōsaka","country":"日本","lat":34.6937,"lng":135.5023},
+    {"id":3,"name":"Nagoya","chineseName":"名古屋","localName":"Nagoya","country":"日本","lat":35.1815,"lng":136.9066},
+    {"id":4,"name":"Yokohama","chineseName":"横滨","localName":"Yokohama","country":"日本","lat":35.4437,"lng":139.6380},
+    {"id":5,"name":"Seoul","chineseName":"首尔","localName":"Seoul","country":"韩国","lat":37.5665,"lng":126.9780},
+    {"id":6,"name":"Busan","chineseName":"釜山","localName":"Busan","country":"韩国","lat":35.1796,"lng":129.0756},
+    {"id":7,"name":"Incheon","chineseName":"仁川","localName":"Incheon","country":"韩国","lat":37.4563,"lng":126.7052},
+    {"id":8,"name":"Singapore","chineseName":"新加坡","localName":"Singapura","country":"新加坡","lat":1.3521,"lng":103.8198},
+    {"id":9,"name":"Bangkok","chineseName":"曼谷","localName":"Krung Thep","country":"泰国","lat":13.7563,"lng":100.5018},
+    {"id":10,"name":"Hanoi","chineseName":"河内","localName":"Hà Nội","country":"越南","lat":21.0285,"lng":105.8542},
+    {"id":11,"name":"Ho Chi Minh City","chineseName":"胡志明市","localName":"Thành phố Hồ Chí Minh","country":"越南","lat":10.8231,"lng":106.6297},
+    {"id":12,"name":"Jakarta","chineseName":"雅加达","localName":"Jakarta","country":"印尼","lat":-6.2088,"lng":106.8456},
+    {"id":13,"name":"Manila","chineseName":"马尼拉","localName":"Maynila","country":"菲律宾","lat":14.5995,"lng":120.9842},
+    {"id":14,"name":"Kuala Lumpur","chineseName":"吉隆坡","localName":"Kuala Lumpur","country":"马来西亚","lat":3.1390,"lng":101.6869},
+    {"id":15,"name":"Yangon","chineseName":"仰光","localName":"Yangon","country":"缅甸","lat":16.8661,"lng":96.1951},
+    {"id":16,"name":"Phnom Penh","chineseName":"金边","localName":"Phnom Penh","country":"柬埔寨","lat":11.5564,"lng":104.9282},
+    {"id":17,"name":"Vientiane","chineseName":"万象","localName":"Vientiane","country":"老挝","lat":17.9757,"lng":102.6331},
+    {"id":18,"name":"Bandar Seri Begawan","chineseName":"斯里巴加湾","localName":"Bandar Seri Begawan","country":"文莱","lat":4.9031,"lng":114.9398},
+    {"id":19,"name":"Bandung","chineseName":"万隆","localName":"Bandung","country":"印尼","lat":-6.9175,"lng":107.6191},
+    {"id":20,"name":"Surabaya","chineseName":"泗水","localName":"Surabaya","country":"印尼","lat":-7.2575,"lng":112.7521},
+    {"id":21,"name":"Yogyakarta","chineseName":"日惹","localName":"Yogyakarta","country":"印尼","lat":-7.7956,"lng":110.3695},
+    {"id":22,"name":"Denpasar","chineseName":"登巴萨","localName":"Denpasar","country":"印尼","lat":-8.6705,"lng":115.2126},
+    {"id":23,"name":"Kuching","chineseName":"古晋","localName":"Kuching","country":"马来西亚","lat":1.5574,"lng":110.3438},
+    {"id":24,"name":"Cebu City","chineseName":"宿务","localName":"Lungsod ng Cebu","country":"菲律宾","lat":10.3157,"lng":123.8854},
+    {"id":25,"name":"Chiang Mai","chineseName":"清迈","localName":"Chiang Mai","country":"泰国","lat":18.7883,"lng":98.9853}
+  ]
+}

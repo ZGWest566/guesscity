@@ -1,0 +1,30 @@
+{
+  "quizName": "中国 III 级",
+  "cities": [
+    {"id":1,"name":"Fuyang","chineseName":"阜阳","localName":"Fuyang","country":"中国","lat":32.8960,"lng":115.8160},
+    {"id":2,"name":"Bozhou","chineseName":"亳州","localName":"Bozhou","country":"中国","lat":33.8660,"lng":115.7790},
+    {"id":3,"name":"Suzhou","chineseName":"宿州","localName":"Suzhou","country":"中国","lat":33.6461,"lng":116.9633},
+    {"id":4,"name":"Chuzhou","chineseName":"滁州","localName":"Chuzhou","country":"中国","lat":32.3040,"lng":118.3160},
+    {"id":5,"name":"Lu'an","chineseName":"六安","localName":"Lu'an","country":"中国","lat":31.7330,"lng":116.5200},
+    {"id":6,"name":"Xuancheng","chineseName":"宣城","localName":"Xuancheng","country":"中国","lat":30.9410,"lng":118.7590},
+    {"id":7,"name":"Chizhou","chineseName":"池州","localName":"Chizhou","country":"中国","lat":30.6650,"lng":117.4890},
+    {"id":8,"name":"Huaibei","chineseName":"淮北","localName":"Huaibei","country":"中国","lat":33.9600,"lng":116.7900},
+    {"id":9,"name":"Huainan","chineseName":"淮南","localName":"Huainan","country":"中国","lat":32.6300,"lng":117.0000},
+    {"id":10,"name":"Ma'anshan","chineseName":"马鞍山","localName":"Ma'anshan","country":"中国","lat":31.6900,"lng":118.5100},
+    {"id":11,"name":"Anqing","chineseName":"安庆","localName":"Anqing","country":"中国","lat":30.5200,"lng":117.0600},
+    {"id":12,"name":"Huangshan","chineseName":"黄山","localName":"Huangshan","country":"中国","lat":29.7130,"lng":118.3150},
+    {"id":13,"name":"Suqian","chineseName":"宿迁","localName":"Suqian","country":"中国","lat":33.9600,"lng":118.2800},
+    {"id":14,"name":"Lianyungang","chineseName":"连云港","localName":"Lianyungang","country":"中国","lat":34.6000,"lng":119.1800},
+    {"id":15,"name":"Huai'an","chineseName":"淮安","localName":"Huai'an","country":"中国","lat":33.5800,"lng":119.0200},
+    {"id":16,"name":"Lishui","chineseName":"丽水","localName":"Lishui","country":"中国","lat":28.4500,"lng":119.9200},
+    {"id":17,"name":"Quzhou","chineseName":"衢州","localName":"Quzhou","country":"中国","lat":28.9400,"lng":118.8700},
+    {"id":18,"name":"Zhoushan","chineseName":"舟山","localName":"Zhoushan","country":"中国","lat":30.0200,"lng":122.1100},
+    {"id":19,"name":"Hebi","chineseName":"鹤壁","localName":"Hebi","country":"中国","lat":35.9000,"lng":114.3000},
+    {"id":20,"name":"Puyang","chineseName":"濮阳","localName":"Puyang","country":"中国","lat":35.7600,"lng":115.0800},
+    {"id":21,"name":"Luohe","chineseName":"漯河","localName":"Luohe","country":"中国","lat":33.5700,"lng":114.0300},
+    {"id":22,"name":"Sanmenxia","chineseName":"三门峡","localName":"Sanmenxia","country":"中国","lat":34.7800,"lng":111.2000},
+    {"id":23,"name":"Shangqiu","chineseName":"商丘","localName":"Shangqiu","country":"中国","lat":34.4400,"lng":115.6600},
+    {"id":24,"name":"Zhoukou","chineseName":"周口","localName":"Zhoukou","country":"中国","lat":33.6300,"lng":114.6300},
+    {"id":25,"name":"Zhumadian","chineseName":"驻马店","localName":"Zhumadian","country":"中国","lat":32.9800,"lng":114.0300}
+  ]
+}

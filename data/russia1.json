@@ -1,0 +1,30 @@
+{
+  "quizName": "俄罗斯+东欧 I 级",
+  "cities": [
+    {"id":1,"name":"Moscow","chineseName":"莫斯科","localName":"Moskva","country":"俄罗斯","lat":55.7558,"lng":37.6173},
+    {"id":2,"name":"Saint Petersburg","chineseName":"圣彼得堡","localName":"Sankt-Peterburg","country":"俄罗斯","lat":59.9343,"lng":30.3351},
+    {"id":3,"name":"Kyiv","chineseName":"基辅","localName":"Kyiv","country":"乌克兰","lat":50.4501,"lng":30.5234},
+    {"id":4,"name":"Minsk","chineseName":"明斯克","localName":"Minsk","country":"白俄罗斯","lat":53.9045,"lng":27.5615},
+    {"id":5,"name":"Warsaw","chineseName":"华沙","localName":"Warszawa","country":"波兰","lat":52.2297,"lng":21.0122},
+    {"id":6,"name":"Prague","chineseName":"布拉格","localName":"Praha","country":"捷克","lat":50.0755,"lng":14.4378},
+    {"id":7,"name":"Budapest","chineseName":"布达佩斯","localName":"Budapest","country":"匈牙利","lat":47.4979,"lng":19.0402},
+    {"id":8,"name":"Bucharest","chineseName":"布加勒斯特","localName":"București","country":"罗马尼亚","lat":44.4268,"lng":26.1025},
+    {"id":9,"name":"Sofia","chineseName":"索菲亚","localName":"Sofia","country":"保加利亚","lat":42.6977,"lng":23.3219},
+    {"id":10,"name":"Belgrade","chineseName":"贝尔格莱德","localName":"Beograd","country":"塞尔维亚","lat":44.7866,"lng":20.4489},
+    {"id":11,"name":"Zagreb","chineseName":"萨格勒布","localName":"Zagreb","country":"克罗地亚","lat":45.8150,"lng":15.9819},
+    {"id":12,"name":"Vilnius","chineseName":"维尔纽斯","localName":"Vilnius","country":"立陶宛","lat":54.6872,"lng":25.2797},
+    {"id":13,"name":"Riga","chineseName":"里加","localName":"Rīga","country":"拉脱维亚","lat":56.9496,"lng":24.1052},
+    {"id":14,"name":"Tallinn","chineseName":"塔林","localName":"Tallinn","country":"爱沙尼亚","lat":59.4370,"lng":24.7536},
+    {"id":15,"name":"Chișinău","chineseName":"基希讷乌","localName":"Chișinău","country":"摩尔多瓦","lat":47.0105,"lng":28.8638},
+    {"id":16,"name":"Tbilisi","chineseName":"第比利斯","localName":"Tbilisi","country":"格鲁吉亚","lat":41.7151,"lng":44.8271},
+    {"id":17,"name":"Yerevan","chineseName":"埃里温","localName":"Yerevan","country":"亚美尼亚","lat":40.1792,"lng":44.4991},
+    {"id":18,"name":"Baku","chineseName":"巴库","localName":"Bakı","country":"阿塞拜疆","lat":40.4093,"lng":49.8671},
+    {"id":19,"name":"Astana","chineseName":"阿斯塔纳","localName":"Astana","country":"哈萨克斯坦","lat":51.1694,"lng":71.4491},
+    {"id":20,"name":"Kazan","chineseName":"喀山","localName":"Kazan","country":"俄罗斯","lat":55.7887,"lng":49.1221},
+    {"id":21,"name":"Yekaterinburg","chineseName":"叶卡捷琳堡","localName":"Yekaterinburg","country":"俄罗斯","lat":56.8389,"lng":60.6057},
+    {"id":22,"name":"Nizhny Novgorod","chineseName":"下诺夫哥罗德","localName":"Nizhny Novgorod","country":"俄罗斯","lat":56.2965,"lng":43.9361},
+    {"id":23,"name":"Samara","chineseName":"萨马拉","localName":"Samara","country":"俄罗斯","lat":53.1959,"lng":50.1000},
+    {"id":24,"name":"Novosibirsk","chineseName":"新西伯利亚","localName":"Novosibirsk","country":"俄罗斯","lat":55.0084,"lng":82.9357},
+    {"id":25,"name":"Rostov-on-Don","chineseName":"顿河畔罗斯托夫","localName":"Rostov-na-Donu","country":"俄罗斯","lat":47.2357,"lng":39.7015}
+  ]
+}

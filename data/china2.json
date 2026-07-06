@@ -1,0 +1,30 @@
+{
+  "quizName": "中国 II 级",
+  "cities": [
+    {"id":1,"name":"Suzhou","chineseName":"苏州","localName":"Suzhou","country":"中国","lat":31.2990,"lng":120.5853},
+    {"id":2,"name":"Wuxi","chineseName":"无锡","localName":"Wuxi","country":"中国","lat":31.4912,"lng":120.3119},
+    {"id":3,"name":"Foshan","chineseName":"佛山","localName":"Foshan","country":"中国","lat":23.0215,"lng":113.1214},
+    {"id":4,"name":"Quanzhou","chineseName":"泉州","localName":"Quanzhou","country":"中国","lat":24.8739,"lng":118.6762},
+    {"id":5,"name":"Nantong","chineseName":"南通","localName":"Nantong","country":"中国","lat":31.9802,"lng":120.8943},
+    {"id":6,"name":"Changzhou","chineseName":"常州","localName":"Changzhou","country":"中国","lat":31.8107,"lng":119.9743},
+    {"id":7,"name":"Xuzhou","chineseName":"徐州","localName":"Xuzhou","country":"中国","lat":34.2044,"lng":117.2848},
+    {"id":8,"name":"Shaoxing","chineseName":"绍兴","localName":"Shaoxing","country":"中国","lat":29.9987,"lng":120.5821},
+    {"id":9,"name":"Jiaxing","chineseName":"嘉兴","localName":"Jiaxing","country":"中国","lat":30.7460,"lng":120.7555},
+    {"id":10,"name":"Wenzhou","chineseName":"温州","localName":"Wenzhou","country":"中国","lat":28.0000,"lng":120.7000},
+    {"id":11,"name":"Jinhua","chineseName":"金华","localName":"Jinhua","country":"中国","lat":29.0781,"lng":119.6476},
+    {"id":12,"name":"Yangzhou","chineseName":"扬州","localName":"Yangzhou","country":"中国","lat":32.3942,"lng":119.4129},
+    {"id":13,"name":"Zhenjiang","chineseName":"镇江","localName":"Zhenjiang","country":"中国","lat":32.1941,"lng":119.4530},
+    {"id":14,"name":"Taizhou","chineseName":"泰州","localName":"Taizhou","country":"中国","lat":32.4555,"lng":119.9250},
+    {"id":15,"name":"Huzhou","chineseName":"湖州","localName":"Huzhou","country":"中国","lat":30.8672,"lng":120.0868},
+    {"id":16,"name":"Wuhu","chineseName":"芜湖","localName":"Wuhu","country":"中国","lat":31.3273,"lng":118.3736},
+    {"id":17,"name":"Jiujiang","chineseName":"九江","localName":"Jiujiang","country":"中国","lat":29.7050,"lng":115.9986},
+    {"id":18,"name":"Ganzhou","chineseName":"赣州","localName":"Ganzhou","country":"中国","lat":25.8310,"lng":114.9350},
+    {"id":19,"name":"Guilin","chineseName":"桂林","localName":"Guilin","country":"中国","lat":25.2736,"lng":110.2903},
+    {"id":20,"name":"Liuzhou","chineseName":"柳州","localName":"Liuzhou","country":"中国","lat":24.3130,"lng":109.4140},
+    {"id":21,"name":"Mianyang","chineseName":"绵阳","localName":"Mianyang","country":"中国","lat":31.4671,"lng":104.6797},
+    {"id":22,"name":"Zunyi","chineseName":"遵义","localName":"Zunyi","country":"中国","lat":27.7256,"lng":106.9271},
+    {"id":23,"name":"Luoyang","chineseName":"洛阳","localName":"Luoyang","country":"中国","lat":34.6181,"lng":112.4540},
+    {"id":24,"name":"Xiangyang","chineseName":"襄阳","localName":"Xiangyang","country":"中国","lat":32.0085,"lng":112.1224},
+    {"id":25,"name":"Yichang","chineseName":"宜昌","localName":"Yichang","country":"中国","lat":30.6905,"lng":111.2906}
+  ]
+}

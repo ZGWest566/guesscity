@@ -1,0 +1,30 @@
+{
+  "quizName": "俄罗斯+东欧 II 级",
+  "cities": [
+    {"id":1,"name":"Volgograd","chineseName":"伏尔加格勒","localName":"Volgograd","country":"俄罗斯","lat":48.7080,"lng":44.5133},
+    {"id":2,"name":"Krasnodar","chineseName":"克拉斯诺达尔","localName":"Krasnodar","country":"俄罗斯","lat":45.0355,"lng":38.9753},
+    {"id":3,"name":"Sochi","chineseName":"索契","localName":"Sochi","country":"俄罗斯","lat":43.5853,"lng":39.7203},
+    {"id":4,"name":"Omsk","chineseName":"鄂木斯克","localName":"Omsk","country":"俄罗斯","lat":54.9885,"lng":73.3242},
+    {"id":5,"name":"Krasnoyarsk","chineseName":"克拉斯诺亚尔斯克","localName":"Krasnoyarsk","country":"俄罗斯","lat":56.0106,"lng":92.8526},
+    {"id":6,"name":"Irkutsk","chineseName":"伊尔库茨克","localName":"Irkutsk","country":"俄罗斯","lat":52.2855,"lng":104.2890},
+    {"id":7,"name":"Khabarovsk","chineseName":"哈巴罗夫斯克","localName":"Khabarovsk","country":"俄罗斯","lat":48.4802,"lng":135.0719},
+    {"id":8,"name":"Vladivostok","chineseName":"符拉迪沃斯托克","localName":"Vladivostok","country":"俄罗斯","lat":43.1155,"lng":131.8855},
+    {"id":9,"name":"Murmansk","chineseName":"摩尔曼斯克","localName":"Murmansk","country":"俄罗斯","lat":68.9585,"lng":33.0827},
+    {"id":10,"name":"Arkhangelsk","chineseName":"阿尔汉格尔斯克","localName":"Arkhangelsk","country":"俄罗斯","lat":64.5399,"lng":40.5158},
+    {"id":11,"name":"Perm","chineseName":"彼尔姆","localName":"Perm","country":"俄罗斯","lat":58.0100,"lng":56.2500},
+    {"id":12,"name":"Ufa","chineseName":"乌法","localName":"Ufa","country":"俄罗斯","lat":54.7348,"lng":55.9579},
+    {"id":13,"name":"Chelyabinsk","chineseName":"车里雅宾斯克","localName":"Chelyabinsk","country":"俄罗斯","lat":55.1644,"lng":61.4368},
+    {"id":14,"name":"Tyumen","chineseName":"秋明","localName":"Tyumen","country":"俄罗斯","lat":57.1613,"lng":65.5250},
+    {"id":15,"name":"Bratsk","chineseName":"布拉茨克","localName":"Bratsk","country":"俄罗斯","lat":56.1514,"lng":101.6342},
+    {"id":16,"name":"Norilsk","chineseName":"诺里尔斯克","localName":"Norilsk","country":"俄罗斯","lat":69.3493,"lng":88.2010},
+    {"id":17,"name":"Magadan","chineseName":"马加丹","localName":"Magadan","country":"俄罗斯","lat":59.5612,"lng":150.8036},
+    {"id":18,"name":"Kaluga","chineseName":"卡卢加","localName":"Kaluga","country":"俄罗斯","lat":54.5145,"lng":36.2594},
+    {"id":19,"name":"Tula","chineseName":"图拉","localName":"Tula","country":"俄罗斯","lat":54.1931,"lng":37.6175},
+    {"id":20,"name":"Ryazan","chineseName":"梁赞","localName":"Ryazan","country":"俄罗斯","lat":54.6199,"lng":39.7449},
+    {"id":21,"name":"Oryol","chineseName":"奥廖尔","localName":"Oryol","country":"俄罗斯","lat":52.9716,"lng":36.0689},
+    {"id":22,"name":"Kursk","chineseName":"库尔斯克","localName":"Kursk","country":"俄罗斯","lat":51.7303,"lng":36.1926},
+    {"id":23,"name":"Belgorod","chineseName":"别尔哥罗德","localName":"Belgorod","country":"俄罗斯","lat":50.5975,"lng":36.5888},
+    {"id":24,"name":"Voronezh","chineseName":"沃罗涅日","localName":"Voronezh","country":"俄罗斯","lat":51.6607,"lng":39.2003},
+    {"id":25,"name":"Lipetsk","chineseName":"利佩茨克","localName":"Lipetsk","country":"俄罗斯","lat":52.6071,"lng":39.5971}
+  ]
+}

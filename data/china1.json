@@ -1,0 +1,30 @@
+{
+  "quizName": "中国 I 级",
+  "cities": [
+    {"id":1,"name":"Beijing","chineseName":"北京","localName":"Beijing","country":"中国","lat":39.9042,"lng":116.4074},
+    {"id":2,"name":"Shanghai","chineseName":"上海","localName":"Shanghai","country":"中国","lat":31.2304,"lng":121.4737},
+    {"id":3,"name":"Guangzhou","chineseName":"广州","localName":"Guangzhou","country":"中国","lat":23.1291,"lng":113.2644},
+    {"id":4,"name":"Shenzhen","chineseName":"深圳","localName":"Shenzhen","country":"中国","lat":22.5431,"lng":114.0579},
+    {"id":5,"name":"Chengdu","chineseName":"成都","localName":"Chengdu","country":"中国","lat":30.5728,"lng":104.0668},
+    {"id":6,"name":"Hangzhou","chineseName":"杭州","localName":"Hangzhou","country":"中国","lat":30.2741,"lng":120.1551},
+    {"id":7,"name":"Wuhan","chineseName":"武汉","localName":"Wuhan","country":"中国","lat":30.5928,"lng":114.3055},
+    {"id":8,"name":"Nanjing","chineseName":"南京","localName":"Nanjing","country":"中国","lat":32.0603,"lng":118.7969},
+    {"id":9,"name":"Tianjin","chineseName":"天津","localName":"Tianjin","country":"中国","lat":39.0841,"lng":117.2009},
+    {"id":10,"name":"Chongqing","chineseName":"重庆","localName":"Chongqing","country":"中国","lat":29.5630,"lng":106.5516},
+    {"id":11,"name":"Xi'an","chineseName":"西安","localName":"Xi'an","country":"中国","lat":34.3416,"lng":108.9398},
+    {"id":12,"name":"Changsha","chineseName":"长沙","localName":"Changsha","country":"中国","lat":28.2282,"lng":112.9388},
+    {"id":13,"name":"Zhengzhou","chineseName":"郑州","localName":"Zhengzhou","country":"中国","lat":34.7472,"lng":113.6253},
+    {"id":14,"name":"Dongguan","chineseName":"东莞","localName":"Dongguan","country":"中国","lat":23.0207,"lng":113.7518},
+    {"id":15,"name":"Qingdao","chineseName":"青岛","localName":"Qingdao","country":"中国","lat":36.0671,"lng":120.3826},
+    {"id":16,"name":"Shenyang","chineseName":"沈阳","localName":"Shenyang","country":"中国","lat":41.8057,"lng":123.4315},
+    {"id":17,"name":"Ningbo","chineseName":"宁波","localName":"Ningbo","country":"中国","lat":29.8683,"lng":121.5440},
+    {"id":18,"name":"Kunming","chineseName":"昆明","localName":"Kunming","country":"中国","lat":24.8801,"lng":102.8329},
+    {"id":19,"name":"Dalian","chineseName":"大连","localName":"Dalian","country":"中国","lat":38.9140,"lng":121.6147},
+    {"id":20,"name":"Xiamen","chineseName":"厦门","localName":"Xiamen","country":"中国","lat":24.4798,"lng":118.0894},
+    {"id":21,"name":"Hefei","chineseName":"合肥","localName":"Hefei","country":"中国","lat":31.8206,"lng":117.2272},
+    {"id":22,"name":"Fuzhou","chineseName":"福州","localName":"Fuzhou","country":"中国","lat":26.0745,"lng":119.2965},
+    {"id":23,"name":"Jinan","chineseName":"济南","localName":"Jinan","country":"中国","lat":36.6512,"lng":117.1201},
+    {"id":24,"name":"Harbin","chineseName":"哈尔滨","localName":"Harbin","country":"中国","lat":45.8038,"lng":126.5350},
+    {"id":25,"name":"Changchun","chineseName":"长春","localName":"Changchun","country":"中国","lat":43.8171,"lng":125.3235}
+  ]
+}

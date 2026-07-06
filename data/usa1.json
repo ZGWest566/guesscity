@@ -1,0 +1,30 @@
+{
+  "quizName": "美国 I 级",
+  "cities": [
+    {"id":1,"name":"New York","chineseName":"纽约","localName":"New York City","country":"美国","lat":40.7128,"lng":-74.0060},
+    {"id":2,"name":"Los Angeles","chineseName":"洛杉矶","localName":"Los Angeles","country":"美国","lat":34.0522,"lng":-118.2437},
+    {"id":3,"name":"Chicago","chineseName":"芝加哥","localName":"Chicago","country":"美国","lat":41.8781,"lng":-87.6298},
+    {"id":4,"name":"Houston","chineseName":"休斯顿","localName":"Houston","country":"美国","lat":29.7604,"lng":-95.3698},
+    {"id":5,"name":"Philadelphia","chineseName":"费城","localName":"Philadelphia","country":"美国","lat":39.9526,"lng":-75.1652},
+    {"id":6,"name":"San Francisco","chineseName":"旧金山","localName":"San Francisco","country":"美国","lat":37.7749,"lng":-122.4194},
+    {"id":7,"name":"Boston","chineseName":"波士顿","localName":"Boston","country":"美国","lat":42.3601,"lng":-71.0589},
+    {"id":8,"name":"Washington","chineseName":"华盛顿","localName":"Washington D.C.","country":"美国","lat":38.9072,"lng":-77.0369},
+    {"id":9,"name":"Seattle","chineseName":"西雅图","localName":"Seattle","country":"美国","lat":47.6062,"lng":-122.3321},
+    {"id":10,"name":"Miami","chineseName":"迈阿密","localName":"Miami","country":"美国","lat":25.7617,"lng":-80.1918},
+    {"id":11,"name":"Atlanta","chineseName":"亚特兰大","localName":"Atlanta","country":"美国","lat":33.7490,"lng":-84.3880},
+    {"id":12,"name":"Detroit","chineseName":"底特律","localName":"Detroit","country":"美国","lat":42.3314,"lng":-83.0458},
+    {"id":13,"name":"Denver","chineseName":"丹佛","localName":"Denver","country":"美国","lat":39.7392,"lng":-104.9903},
+    {"id":14,"name":"Phoenix","chineseName":"菲尼克斯","localName":"Phoenix","country":"美国","lat":33.4484,"lng":-112.0740},
+    {"id":15,"name":"Dallas","chineseName":"达拉斯","localName":"Dallas","country":"美国","lat":32.7767,"lng":-96.7970},
+    {"id":16,"name":"San Antonio","chineseName":"圣安东尼奥","localName":"San Antonio","country":"美国","lat":29.4241,"lng":-98.4936},
+    {"id":17,"name":"San Diego","chineseName":"圣地亚哥","localName":"San Diego","country":"美国","lat":32.7157,"lng":-117.1611},
+    {"id":18,"name":"San Jose","chineseName":"圣何塞","localName":"San Jose","country":"美国","lat":37.3382,"lng":-121.8863},
+    {"id":19,"name":"Columbus","chineseName":"哥伦布","localName":"Columbus","country":"美国","lat":39.9612,"lng":-82.9988},
+    {"id":20,"name":"Charlotte","chineseName":"夏洛特","localName":"Charlotte","country":"美国","lat":35.2271,"lng":-80.8431},
+    {"id":21,"name":"Indianapolis","chineseName":"印第安纳波利斯","localName":"Indianapolis","country":"美国","lat":39.7684,"lng":-86.1581},
+    {"id":22,"name":"Jacksonville","chineseName":"杰克逊维尔","localName":"Jacksonville","country":"美国","lat":30.3322,"lng":-81.6557},
+    {"id":23,"name":"Austin","chineseName":"奥斯汀","localName":"Austin","country":"美国","lat":30.2672,"lng":-97.7431},
+    {"id":24,"name":"Memphis","chineseName":"孟菲斯","localName":"Memphis","country":"美国","lat":35.1495,"lng":-90.0490},
+    {"id":25,"name":"Baltimore","chineseName":"巴尔的摩","localName":"Baltimore","country":"美国","lat":39.2904,"lng":-76.6122}
+  ]
+}

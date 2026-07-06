@@ -1,0 +1,30 @@
+{
+  "quizName": "欧洲 III 级",
+  "cities": [
+    {"id":1,"name":"Aachen","chineseName":"亚琛","localName":"Aachen","country":"德国","lat":50.7753,"lng":6.0839},
+    {"id":2,"name":"Regensburg","chineseName":"雷根斯堡","localName":"Regensburg","country":"德国","lat":49.0195,"lng":12.0970},
+    {"id":3,"name":"Freiburg","chineseName":"弗莱堡","localName":"Freiburg","country":"德国","lat":47.9990,"lng":7.8421},
+    {"id":4,"name":"Karlsruhe","chineseName":"卡尔斯鲁厄","localName":"Karlsruhe","country":"德国","lat":49.0069,"lng":8.4037},
+    {"id":5,"name":"Mainz","chineseName":"美因茨","localName":"Mainz","country":"德国","lat":49.9929,"lng":8.2473},
+    {"id":6,"name":"Trier","chineseName":"特里尔","localName":"Trier","country":"德国","lat":49.7596,"lng":6.6386},
+    {"id":7,"name":"Saarbrücken","chineseName":"萨尔布吕肯","localName":"Saarbrücken","country":"德国","lat":49.2344,"lng":6.9966},
+    {"id":8,"name":"Bochum","chineseName":"波鸿","localName":"Bochum","country":"德国","lat":51.4818,"lng":7.2195},
+    {"id":9,"name":"Duisburg","chineseName":"杜伊斯堡","localName":"Duisburg","country":"德国","lat":51.4344,"lng":6.7623},
+    {"id":10,"name":"Wuppertal","chineseName":"伍珀塔尔","localName":"Wuppertal","country":"德国","lat":51.2562,"lng":7.1508},
+    {"id":11,"name":"Cottbus","chineseName":"科特布斯","localName":"Cottbus","country":"德国","lat":51.7567,"lng":14.3359},
+    {"id":12,"name":"Rostock","chineseName":"罗斯托克","localName":"Rostock","country":"德国","lat":54.0924,"lng":12.0991},
+    {"id":13,"name":"Schwerin","chineseName":"什未林","localName":"Schwerin","country":"德国","lat":53.6288,"lng":11.4149},
+    {"id":14,"name":"Jena","chineseName":"耶拿","localName":"Jena","country":"德国","lat":50.9271,"lng":11.5892},
+    {"id":15,"name":"Weimar","chineseName":"魏玛","localName":"Weimar","country":"德国","lat":50.9795,"lng":11.3239},
+    {"id":16,"name":"Erfurt","chineseName":"爱尔福特","localName":"Erfurt","country":"德国","lat":50.9778,"lng":11.0287},
+    {"id":17,"name":"Magdeburg","chineseName":"马格德堡","localName":"Magdeburg","country":"德国","lat":52.1205,"lng":11.6276},
+    {"id":18,"name":"Halle","chineseName":"哈勒","localName":"Halle","country":"德国","lat":51.4825,"lng":11.9696},
+    {"id":19,"name":"Chemnitz","chineseName":"开姆尼茨","localName":"Chemnitz","country":"德国","lat":50.8278,"lng":12.9214},
+    {"id":20,"name":"Bamberg","chineseName":"班贝格","localName":"Bamberg","country":"德国","lat":49.8988,"lng":10.9028},
+    {"id":21,"name":"Würzburg","chineseName":"维尔茨堡","localName":"Würzburg","country":"德国","lat":49.7925,"lng":9.9355},
+    {"id":22,"name":"Darmstadt","chineseName":"达姆施塔特","localName":"Darmstadt","country":"德国","lat":49.8728,"lng":8.6512},
+    {"id":23,"name":"Giessen","chineseName":"吉森","localName":"Gießen","country":"德国","lat":50.5869,"lng":8.6762},
+    {"id":24,"name":"Marburg","chineseName":"马尔堡","localName":"Marburg","country":"德国","lat":50.8104,"lng":8.7698},
+    {"id":25,"name":"Kassel","chineseName":"卡塞尔","localName":"Kassel","country":"德国","lat":51.3155,"lng":9.4981}
+  ]
+}
