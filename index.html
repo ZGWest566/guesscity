@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌍 猜地名 - 世界城市挑战</title>
+    <!-- Leaflet CSS (BootCDN) -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <style>
+        /* ===== 全局重置 & 字体 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+            background: #0b1a2f;
+            color: #e8edf3;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* ===== 模态框 ===== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .modal-box {
+            background: #11243a;
+            border-radius: 28px;
+            padding: 40px 48px;
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .modal-box h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .modal-box .modal-score {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffd966;
+            margin: 12px 0;
+        }
+        .modal-box .modal-detail {
+            font-size: 18px;
+            color: #b8d4f0;
+            margin-bottom: 24px;
+        }
+        .modal-box #btnRestart {
+            padding: 12px 36px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #0b1a2f;
+            transition: 0.2s;
+        }
+        .modal-box #btnRestart:hover {
+            transform: scale(1.03);
+        }
+
+        /* ===== 主容器 ===== */
+        .game-container {
+            width: 100vw;
+            height: 100vh;
+            max-width: 1400px;
+            max-height: 900px;
+            background: #11243a;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin: 12px;
+            position: relative;
+        }
+
+        /* ===== 顶部栏 ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #0f1f33, #1a3050);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        .header .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header .title span {
+            font-size: 26px;
+            -webkit-text-fill-color: initial;
+        }
+        .header .stats {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 15px;
+            flex-wrap: wrap;
+        }
+        .header .stats .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 4px 16px 4px 12px;
+            border-radius: 30px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .header .stats .stat-item .label {
+            color: #a0b8d0;
+            font-weight: 300;
+        }
+        .header .stats .stat-item .value {
+            font-weight: 700;
+            color: #ffd966;
+            min-width: 28px;
+        }
+        .header .stats .stat-item .value.score-val {
+            color: #7dd3fc;
+        }
+
+        /* ===== 题库选择器 ===== */
+        .quiz-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .quiz-selector select {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 4px 16px 4px 12px;
+            color: #e8edf3;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            outline: none;
+            backdrop-filter: blur(4px);
+            min-width: 120px;
+        }
+        .quiz-selector select option {
+            background: #0b1a2f;
+            color: #e8edf3;
+        }
+        .map-selector select {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 30px;
+            padding: 4px 16px 4px 12px;
+            color: #e8edf3;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+        }
+        .map-selector select option {
+            background: #0b1a2f;
+            color: #e8edf3;
+        }
+
+        /* ===== 地名提示区 ===== */
+        .prompt-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            flex-shrink: 0;
+            min-height: 68px;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .prompt-area .city-name {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .prompt-area .city-name .chinese {
+            color: #f6d365;
+        }
+        .prompt-area .city-name .local {
+            color: #b8d4f0;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .prompt-area .city-name .divider {
+            color: rgba(255, 255, 255, 0.2);
+            font-weight: 300;
+        }
+        .prompt-area .hint {
+            font-size: 15px;
+            color: #8aaac8;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 4px 18px;
+            border-radius: 30px;
+            border: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===== 地图容器 ===== */
+        .map-wrapper {
+            flex: 1;
+            position: relative;
+            min-height: 0;
+            background: #0a1628;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            background: #0a1628;
+        }
+        .leaflet-control-zoom {
+            border: none !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+        }
+        .leaflet-control-zoom a {
+            background: rgba(20, 40, 70, 0.85) !important;
+            color: #e0ecff !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(8px);
+        }
+        .leaflet-control-zoom a:hover {
+            background: rgba(40, 80, 140, 0.9) !important;
+        }
+        .leaflet-popup-content-wrapper {
+            background: rgba(10, 25, 50, 0.92) !important;
+            color: #e8f0f8 !important;
+            border-radius: 12px !important;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+        }
+        .leaflet-popup-tip {
+            background: rgba(10, 25, 50, 0.92) !important;
+        }
+
+        /* ===== 结果 & 控制栏 ===== */
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 28px;
+            background: rgba(15, 30, 50, 0.92);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+            backdrop-filter: blur(8px);
+        }
+        .bottom-bar .result-info {
+            display: flex;
+            align-items: center;
+            gap: 12px 24px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .bottom-bar .result-info .dist {
+            font-size: 20px;
+            font-weight: 700;
+            color: #7dd3fc;
+        }
+        .bottom-bar .result-info .dist .km {
+            font-size: 15px;
+            font-weight: 400;
+            color: #8aaac8;
+        }
+        .bottom-bar .result-info .score-badge {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 2px 18px;
+            border-radius: 30px;
+            background: rgba(255, 215, 0, 0.15);
+            color: #ffd966;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .bottom-bar .result-info .target-name {
+            color: #b8d4f0;
+            font-size: 15px;
+        }
+        .bottom-bar .result-info .target-name strong {
+            color: #f6d365;
+            font-weight: 600;
+        }
+        .bottom-bar .actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .bottom-bar .actions button {
+            padding: 8px 22px;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.07);
+            color: #c8dce8;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .bottom-bar .actions button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .bottom-bar .actions button.btn-primary {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #0b1a2f;
+            border: none;
+        }
+        .bottom-bar .actions button.btn-primary:hover {
+            background: linear-gradient(135deg, #fde68a, #fcaa7a);
+        }
+        .bottom-bar .actions button.btn-map {
+            background: rgba(60, 120, 200, 0.25);
+            color: #7dd3fc;
+            border-color: rgba(60, 120, 200, 0.2);
+        }
+        .bottom-bar .actions button.btn-map:hover {
+            background: rgba(60, 120, 200, 0.4);
+        }
+        .bottom-bar .actions button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        .bottom-bar .actions button .icon {
+            font-size: 16px;
+        }
+
+        /* ===== 消息 Toast ===== */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: rgba(10, 25, 50, 0.92);
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-size: 16px;
+            color: #e8f0f8;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.4s ease;
+            pointer-events: none;
+            z-index: 9999;
+            font-weight: 500;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+        .toast.success {
+            border-color: rgba(125, 211, 252, 0.3);
+        }
+        .toast.error {
+            border-color: rgba(255, 100, 100, 0.3);
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 768px) {
+            .game-container {
+                max-height: 100vh;
+                border-radius: 0;
+                margin: 0;
+            }
+            .header {
+                padding: 10px 16px;
+            }
+            .header .title {
+                font-size: 18px;
+            }
+            .header .stats .stat-item {
+                padding: 2px 12px 2px 8px;
+                font-size: 13px;
+            }
+            .quiz-selector select {
+                font-size: 12px;
+                min-width: 90px;
+                padding: 2px 10px;
+            }
+            .prompt-area {
+                padding: 8px 12px;
+                min-height: 56px;
+            }
+            .prompt-area .city-name {
+                font-size: 20px;
+            }
+            .prompt-area .city-name .local {
+                font-size: 16px;
+            }
+            .prompt-area .hint {
+                font-size: 12px;
+                padding: 2px 12px;
+            }
+            .bottom-bar {
+                padding: 10px 16px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 8px;
+            }
+            .bottom-bar .result-info {
+                justify-content: center;
+                font-size: 14px;
+            }
+            .bottom-bar .result-info .dist {
+                font-size: 17px;
+            }
+            .bottom-bar .result-info .score-badge {
+                font-size: 17px;
+                padding: 0 14px;
+            }
+            .bottom-bar .actions {
+                justify-content: center;
+            }
+            .bottom-bar .actions button {
+                padding: 6px 16px;
+                font-size: 13px;
+            }
+            .toast {
+                bottom: 80px;
+                font-size: 14px;
+                padding: 10px 20px;
+                max-width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            .header .title {
+                font-size: 15px;
+            }
+            .header .stats .stat-item {
+                font-size: 11px;
+                padding: 2px 8px;
+            }
+            .prompt-area .city-name {
+                font-size: 17px;
+            }
+            .prompt-area .city-name .local {
+                font-size: 14px;
+            }
+            .bottom-bar .result-info .dist {
+                font-size: 15px;
+            }
+            .bottom-bar .result-info .score-badge {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- 主容器 -->
+    <div class="game-container">
+
+        <!-- ===== 结算模态框 ===== -->
+        <div id="resultModal" class="modal-overlay" style="display:none;">
+            <div class="modal-box">
+                <h2>🎉 挑战完成！</h2>
+                <p class="modal-score">总分：<span id="finalScore">0</span></p>
+                <p class="modal-detail">正确题数：<span id="finalCorrect">0</span> / <span id="finalTotal">10</span></p>
+                <button id="btnRestart" class="btn-primary">🔄 再来一局</button>
+            </div>
+        </div>
+
+        <!-- 顶部栏 -->
+        <div class="header">
+            <div class="title">
+                <span>🌍</span> 猜地名
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="label">🏆 得分</span>
+                    <span class="value score-val" id="totalScore">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">📌 第</span>
+                    <span class="value" id="roundNum">1</span>
+                    <span class="label">/ <span id="totalRounds">10</span> 题</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">🎯 正确</span>
+                    <span class="value" id="correctCount">0</span>
+                </div>
+            </div>
+            <div class="quiz-selector">
+                <select id="quizSelect"></select>
+            </div>
+            <div class="map-selector">
+                <select id="mapSelect">
+                    <option value="amap">高德地图 (无POI)</option>
+                    <option value="cartodb">CartoDB (无标签)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 地名提示 -->
+        <div class="prompt-area" id="promptArea">
+            <div class="city-name" id="cityNameDisplay">
+                <span class="chinese">🌐 加载中...</span>
+                <span class="divider">·</span>
+                <span class="local">Loading</span>
+            </div>
+            <span class="hint" id="hintText">👆 点击地图选择位置</span>
+        </div>
+
+        <!-- 地图 -->
+        <div class="map-wrapper">
+            <div id="map"></div>
+        </div>
+
+        <!-- 底部控制栏 -->
+        <div class="bottom-bar">
+            <div class="result-info" id="resultInfo">
+                <span class="dist" id="distDisplay">—</span>
+                <span class="score-badge" id="roundScoreBadge">—</span>
+                <span class="target-name" id="targetNameDisplay"></span>
+            </div>
+            <div class="actions">
+                <button class="btn-map" id="btnMapView" disabled>
+                    <span class="icon">🗺️</span> 地图查看
+                </button>
+                <button class="btn-primary" id="btnNext">
+                    <span class="icon">➡️</span> 下一题
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.min.js">
+    </script>
+    <!-- 游戏主逻辑 -->
+    <script src="app.js"></script>
+</body>
+</html>
