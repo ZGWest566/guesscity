@@ -16,7 +16,7 @@ const MAP_PROVIDERS = {
         attribution: '&copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community'
     },
     'amap-satellite': {
-        name: '高德卫星影像 (无标注)',
+        name: '高德卫星影像 (无标注/仅国内)',
         url: 'https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
         attribution: '&copy; <a href="https://www.amap.com/">高德地图</a>',
         subdomains: ['01', '02', '03', '04']
