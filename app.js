@@ -5,6 +5,11 @@
 
 // ---------- 地图提供商配置 ----------
 const MAP_PROVIDERS = {
+    'google-satellite': {
+        name: 'Google 影像 (无标注)',
+        url: 'https://gac-geo.googlecnapps.cn/maps/vt?lyrs=s&x={x}&y={y}&z={z}',
+        attribution: '&copy; Google'
+    },
     'esri-satellite': {
         name: 'Esri 卫星影像 (无标注)',
         url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
