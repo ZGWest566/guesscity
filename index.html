@@ -178,14 +178,17 @@
             color: #e8edf3;
         }
         .map-selector select {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 30px;
             padding: 4px 16px 4px 12px;
             color: #e8edf3;
             font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
             outline: none;
+            backdrop-filter: blur(4px);
+            min-width: 120px;
         }
         .map-selector select option {
             background: #0b1a2f;
@@ -421,6 +424,11 @@
                 min-width: 90px;
                 padding: 2px 10px;
             }
+            .map-selector select {
+                font-size: 12px;
+                min-width: 90px;
+                padding: 2px 10px;
+            }
             .prompt-area {
                 padding: 8px 12px;
                 min-height: 56px;
@@ -531,10 +539,7 @@
                 <select id="quizSelect"></select>
             </div>
             <div class="map-selector">
-                <select id="mapSelect">
-                    <option value="amap">高德地图 (无POI)</option>
-                    <option value="cartodb">CartoDB (无标签)</option>
-                </select>
+                <select id="mapSelect"></select>
             </div>
         </div>
 
