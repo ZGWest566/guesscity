@@ -16,7 +16,7 @@ const MAP_PROVIDERS = {
         attribution: '&copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community'
     },
     'amap-satellite': {
-        name: '高德卫星影像 (无标注/仅国内)',
+        name: '高德卫星影像 (无标注)',
         url: 'https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
         attribution: '&copy; <a href="https://www.amap.com/">高德地图</a>',
         subdomains: ['01', '02', '03', '04']
@@ -32,8 +32,14 @@ const MAP_PROVIDERS = {
 // ---------- 工具函数 ----------
 function haversine(lat1, lng1, lat2, lng2) {
     const R = 6371;
+    // 经度差归一化到 [-180, 180]
+    let dLng = (lng2 - lng1) % 360;
+    if (dLng > 180) dLng -= 360;
+    else if (dLng < -180) dLng += 360;
+
     const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLng = (lng2 - lng1) * Math.PI / 180;
+    dLng = dLng * Math.PI / 180;
+
     const a = Math.sin(dLat / 2) ** 2 +
         Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
         Math.sin(dLng / 2) ** 2;
@@ -342,18 +348,19 @@ function onMapClick(e) {
         return;
     }
 
-    const { lat, lng } = e.latlng;
+    let { lat, lng } = e.latlng;
+    // 归一化经度到 [-180, 180]
+    lng = ((lng % 360) + 540) % 360 - 180;
+
     state.playerLat = lat;
     state.playerLng = lng;
 
     clearMapOverlays();
-
     addMarker(lat, lng, '#ff6b6b', '你的选择', '📍 你点击的位置');
 
     const cities = state.targetCities;
     let nearest = null;
     let minDist = Infinity;
-
     for (const city of cities) {
         const dist = haversine(lat, lng, city.lat, city.lng);
         if (dist < minDist) {
@@ -361,21 +368,16 @@ function onMapClick(e) {
             nearest = city;
         }
     }
-
     if (!nearest) {
         showToast('⚠️ 未找到匹配的城市，请重试', 'error', 1500);
         return;
     }
-
     state.matchedCity = nearest;
 
     addMarker(nearest.lat, nearest.lng, '#ffd700', nearest.chineseName,
         `<b>${nearest.chineseName}</b> (${nearest.localName})`
     );
-
     addLine(lat, lng, nearest.lat, nearest.lng, 'rgba(255,215,0,0.6)', '6,10');
-
-    // 显示满分范围圈（20km）
     addCircle(nearest.lat, nearest.lng, 20000, 'rgba(76, 175, 80, 0.15)');
 
     const score = calcScore(minDist);
@@ -384,9 +386,7 @@ function onMapClick(e) {
     dom.distDisplay.innerHTML = `${distStr} <span class="km">· ${Math.round(minDist)} km</span>`;
     dom.roundScoreBadge.textContent = score + '分';
     dom.roundScoreBadge.style.color = score >= 80 ? '#7dd3fc' : score >= 50 ? '#f6d365' : '#ff8a80';
-
-    dom.targetNameDisplay.innerHTML =
-        `🎯 目标: <strong>${nearest.chineseName}</strong> (${nearest.localName})`;
+    dom.targetNameDisplay.innerHTML = `🎯 目标: <strong>${nearest.chineseName}</strong> (${nearest.localName})`;
 
     state.answered = true;
     state.totalScore += score;
@@ -395,9 +395,7 @@ function onMapClick(e) {
 
     dom.btnNext.disabled = false;
     dom.btnMapView.disabled = false;
-
     enableMapClick(false);
-
     flyTo(nearest.lat, nearest.lng, 5);
 
     let emoji = '🎯';
